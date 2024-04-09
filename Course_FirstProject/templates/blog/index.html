@@ -5,11 +5,8 @@
     <title>Learn Django</title>
 </head>
 <body>
-{% with name="Tom" age=29 %}
- <div>
-     <p>Name: {{ name }}</p>
-     <p>Age: {{ age }}</p>
- </div>
-{% endwith %}
+    {% extends "base.html" %}
+    {% block title %}Index{% endblock title%}
+    {% block header %}Главная{% endblock header %}
 </body>
 </html>
